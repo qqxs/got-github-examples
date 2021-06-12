@@ -16,7 +16,7 @@ async function downloadExample() {
   process.chdir(root);
   return pipeline(
     got.stream(
-      `https://codeload.github.com/qqxs/got-github-examples/tar.gz/master`
+      `https://codeload.github.com/qqxs/got-github-examples/tar.gz/main`
     ),
     tar.extract(
       {
