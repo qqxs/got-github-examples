@@ -23,7 +23,7 @@ async function downloadExample() {
   process.chdir(root);
   return pipeline(
     got.stream(
-    // `https://codeload.github.com/${usename}/${githubProjectName}/tar.gz/${branch}`
+    // `https://codeload.github.com/${user}/${repo}/tar.gz/${branch}`
       `https://codeload.github.com/qqxs/got-github-examples/tar.gz/main`
     ),
     tar.extract(
@@ -31,7 +31,7 @@ async function downloadExample() {
         cwd: root,
         strip: 3
       },
-    // [`${githubProjectName}-${branch}/${examplesPath}`]
+    // [`${repo}-${branch}/${examplePath}`]
       [`got-github-examples-main/examples/example01`]
     )
   );
