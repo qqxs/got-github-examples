@@ -1,5 +1,3 @@
-// const got = require("got");
-
 import got from "got";
 import tar from "tar";
 import path from "path";
@@ -8,7 +6,7 @@ import { promisify } from "util";
 import { makeDir } from "./make-dir";
 
 const pipeline = promisify(Stream.pipeline);
-
+// tar extract 内容放置的路径
 const root = path.resolve("data-fetch-app");
 
 async function downloadExample() {
