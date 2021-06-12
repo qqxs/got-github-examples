@@ -1,0 +1,12 @@
+{
+  "name": "example01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+  },
+  "license": "MIT"
+}
