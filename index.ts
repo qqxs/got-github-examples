@@ -23,7 +23,7 @@ async function downloadExample() {
         cwd: root,
         strip: 3
       },
-      [`got-github-examples-develop/examples/example01`]
+      [`got-github-examples-main/examples/example01`]
     )
   );
 }
